@@ -2043,7 +2043,7 @@ JjFoQUREREREREQx6f8BhTMI5y6sKJIAAAAASUVORK5CYII='/>
 * 结束 PK [unSubscribeOtherChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#unSubscribeOtherChannel)
 * 离开频道 [leaveChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#leaveChannel)
 
-###可选操作
+### 可选操作
 * 启用说话音量提示，可选操作 [enableAudioVolumeIndication](http://www.3ttech.cn/index.php?menu=72&type=Android#enableAudioVolumeIndication)
 * 设置本地视频质量等级，可选操作，默认 360P [setVideoProfile](http://www.3ttech.cn/index.php?menu=72&type=Android#setVideoProfile)
 * 切换摄像头 [switchCamera](http://www.3ttech.cn/index.php?menu=72&type=Android#switchCamera)
