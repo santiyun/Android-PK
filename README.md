@@ -2029,25 +2029,25 @@ JjFoQUREREREREQx6f8BhTMI5y6sKJIAAAAASUVORK5CYII='/>
 # 功能列表
 
 1. 创建 TTT 音视频引擎对象 [create](http://www.3ttech.cn/index.php?menu=72&type=Android#create)
-* 启用视频模块功能 [enableVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#enableVideo)
-* 设置频道模式，PK 场景下频道模式需要设定为直播模式 [setChannelProfile](http://www.3ttech.cn/index.php?menu=72&type=Android#setChannelProfile)
-* 设置用户角色，PK 场景下需要角色设定为主播 [setClientRole](http://www.3ttech.cn/index.php?menu=72&type=Android#setClientRole) 
-* 设置 SDK 的 CDN 推流地址 [configPublisher](http://www.3ttech.cn/index.php?menu=72&type=Android#configPublisher) 
-* 加入频道 [joinChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#joinChannel)
-* 创建视频显示控件 [CreateRendererView](http://www.3ttech.cn/index.php?menu=72&type=Android#CreateRendererView)
-* 配置视频显示控件 [setupLocalVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#setupLocalVideo)
-* 打开本地视频预览 [startPreview](http://www.3ttech.cn/index.php?menu=72&type=Android#startPreview)
-* 发起 PK [subscribeOtherChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#subscribeOtherChannel) 
-* 配置远端用户视频显示控件 [setupRemoteVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#setupRemoteVideo) 
-* 设置其他主播在 CDN 视频流中显示位置 [setVideoCompositingLayout](http://www.3ttech.cn/index.php?menu=72&type=Android#setVideoCompositingLayout)
-* 结束 PK [unSubscribeOtherChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#unSubscribeOtherChannel)
-* 离开频道 [leaveChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#leaveChannel)
+2. 启用视频模块功能 [enableVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#enableVideo)
+3. 设置频道模式，PK 场景下频道模式需要设定为直播模式 [setChannelProfile](http://www.3ttech.cn/index.php?menu=72&type=Android#setChannelProfile)
+4. 设置用户角色，PK 场景下需要角色设定为主播 [setClientRole](http://www.3ttech.cn/index.php?menu=72&type=Android#setClientRole) 
+5. 设置 SDK 的 CDN 推流地址 [configPublisher](http://www.3ttech.cn/index.php?menu=72&type=Android#configPublisher) 
+6. 加入频道 [joinChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#joinChannel)
+7. 创建视频显示控件 [CreateRendererView](http://www.3ttech.cn/index.php?menu=72&type=Android#CreateRendererView)
+8. 配置视频显示控件 [setupLocalVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#setupLocalVideo)
+9. 打开本地视频预览 [startPreview](http://www.3ttech.cn/index.php?menu=72&type=Android#startPreview)
+10. 发起 PK [subscribeOtherChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#subscribeOtherChannel) 
+11. 配置远端用户视频显示控件 [setupRemoteVideo](http://www.3ttech.cn/index.php?menu=72&type=Android#setupRemoteVideo) 
+12. 设置其他主播在 CDN 视频流中显示位置 [setVideoCompositingLayout](http://www.3ttech.cn/index.php?menu=72&type=Android#setVideoCompositingLayout)
+13. 结束 PK [unSubscribeOtherChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#unSubscribeOtherChannel)
+14. 离开频道 [leaveChannel](http://www.3ttech.cn/index.php?menu=72&type=Android#leaveChannel)
 
 ### 可选操作
-* 启用说话音量提示，可选操作 [enableAudioVolumeIndication](http://www.3ttech.cn/index.php?menu=72&type=Android#enableAudioVolumeIndication)
-* 设置本地视频质量等级，可选操作，默认 360P [setVideoProfile](http://www.3ttech.cn/index.php?menu=72&type=Android#setVideoProfile)
-* 切换摄像头 [switchCamera](http://www.3ttech.cn/index.php?menu=72&type=Android#switchCamera)
-* 静音/取消静音 [muteLocalAudioStream](http://www.3ttech.cn/index.php?menu=72&type=Android#muteLocalAudioStream)
+1. 启用说话音量提示，可选操作 [enableAudioVolumeIndication](http://www.3ttech.cn/index.php?menu=72&type=Android#enableAudioVolumeIndication)
+2. 设置本地视频质量等级，可选操作，默认 360P [setVideoProfile](http://www.3ttech.cn/index.php?menu=72&type=Android#setVideoProfile)
+3. 切换摄像头 [switchCamera](http://www.3ttech.cn/index.php?menu=72&type=Android#switchCamera)
+4. 静音/取消静音 [muteLocalAudioStream](http://www.3ttech.cn/index.php?menu=72&type=Android#muteLocalAudioStream)
 
 ### 实现细节
 * PK 模式下，双方主播的 CDN 推流地址应与普通模式时选用的 URL 地址是一致的，确保 CDN 观众无需切换 CDN 地址。
