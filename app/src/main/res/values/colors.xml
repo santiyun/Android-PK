@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="font_com_color_white">#FFFFFF</color>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="transparent">#0000</color>
+	<color name="main_linkstart">#1c86ee</color>
+	<color name="main_linkstart_press">#000000</color>
+</resources>
