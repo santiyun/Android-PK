@@ -45,7 +45,7 @@
 
 1. 解压下载的 SDK 压缩包，内容如图所示
 ![](Android_1.png)
-2. 用Android Studio，打开**TTT\_ANDROID\_CHATROOM** Demo工程，文件列表如图所示，复制**3T\_Native\_SDK\_for\_Android\_Vx.x.x\_Full.aar** 到工程 **app** 项目下的 **libs** 目录下。
+2. 用Android Studio，打开**Android-PK** Demo工程，文件列表如图所示，复制**3T\_Native\_SDK\_for\_Android\_Vx.x.x\_Full.aar** 到工程 **app** 项目下的 **libs** 目录下。
 ![](Android_2.jpg) 
 ![](Android_3.jpg) 
 ![](Android_4.jpg) 
