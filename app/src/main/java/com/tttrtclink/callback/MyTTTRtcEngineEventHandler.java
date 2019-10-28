@@ -6,10 +6,10 @@ import android.content.Intent;
 import com.tttrtclink.LocalConstans;
 import com.tttrtclink.bean.JniObjs;
 import com.tttrtclink.utils.MyLog;
-import com.wushuangtech.bean.LocalAudioStats;
-import com.wushuangtech.bean.LocalVideoStats;
-import com.wushuangtech.bean.RemoteAudioStats;
-import com.wushuangtech.bean.RemoteVideoStats;
+import com.wushuangtech.expansion.bean.LocalAudioStats;
+import com.wushuangtech.expansion.bean.LocalVideoStats;
+import com.wushuangtech.expansion.bean.RemoteAudioStats;
+import com.wushuangtech.expansion.bean.RemoteVideoStats;
 import com.wushuangtech.library.Constants;
 import com.wushuangtech.wstechapi.TTTRtcEngineEventHandler;
 
@@ -48,7 +48,7 @@ public class MyTTTRtcEngineEventHandler extends TTTRtcEngineEventHandler {
     }
 
     @Override
-    public void onJoinChannelSuccess(String channel, long uid) {
+    public void onJoinChannelSuccess(String channel, long uid, int elapsed) {
         MyLog.i("wzg", "onJoinChannelSuccess.... channel ： " + channel + " | uid : " + uid);
         JniObjs mJniObjs = new JniObjs();
         mJniObjs.mJniType = CALL_BACK_ON_ENTER_ROOM;
@@ -86,7 +86,7 @@ public class MyTTTRtcEngineEventHandler extends TTTRtcEngineEventHandler {
     }
 
     @Override
-    public void onUserJoined(long nUserId, int identity) {
+    public void onUserJoined(long nUserId, int identity, int elapsed) {
         MyLog.i("wzg", "onUserJoined.... nUserId ： " + nUserId + " | identity : " + identity
                 + " | mIsSaveCallBack : " + mIsSaveCallBack);
         if (mRole == Constants.CLIENT_ROLE_BROADCASTER) {

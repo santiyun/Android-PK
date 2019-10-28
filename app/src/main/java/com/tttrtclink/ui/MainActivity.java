@@ -26,7 +26,7 @@ import com.tttrtclink.bean.JniObjs;
 import com.tttrtclink.bean.UserInfo;
 import com.tttrtclink.callback.MyTTTRtcEngineEventHandler;
 import com.tttrtclink.dialog.ExitRoomDialog;
-import com.wushuangtech.bean.VideoCompositingLayout;
+import com.wushuangtech.expansion.bean.VideoCompositingLayout;
 import com.wushuangtech.library.Constants;
 import com.wushuangtech.wstechapi.TTTRtcEngine;
 import com.wushuangtech.wstechapi.model.VideoCanvas;
@@ -38,6 +38,7 @@ public class MainActivity extends BaseActivity {
 
     public ViewGroup mFullScreenShowView;
     public TextView mAudioSpeedShow;
+    public EditText mRoomET;
     public TextView mVideoSpeedShow;
     public ImageView mAudioChannel;
     private AlertDialog.Builder mErrorExitDialog;
@@ -60,7 +61,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void onLinkButtonClick(View v) {
-        String roomID = ((EditText) findViewById(R.id.remote_room_id)).getText().toString().trim();
+        String roomID = mRoomET.getText().toString().trim();
         if (TextUtils.isEmpty(roomID)) {
             Toast.makeText(MainActivity.this, R.string.ttt_error_checkchannel_empty, Toast.LENGTH_LONG).show();
             return;
@@ -102,6 +103,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initView() {
+        mRoomET = findViewById(R.id.remote_room_id);
         mAudioSpeedShow = findViewById(R.id.main_btn_audioup);
         mVideoSpeedShow = findViewById(R.id.main_btn_videoup);
         mFullScreenShowView = findViewById(R.id.main_background);

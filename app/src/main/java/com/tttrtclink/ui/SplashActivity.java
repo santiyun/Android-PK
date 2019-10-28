@@ -21,6 +21,7 @@ import com.tttrtclink.callback.MyTTTRtcEngineEventHandler;
 import com.tttrtclink.utils.MySpUtils;
 import com.wushuangtech.library.Constants;
 import com.wushuangtech.wstechapi.TTTRtcEngine;
+import com.wushuangtech.wstechapi.model.PublisherConfiguration;
 import com.yanzhenjie.permission.AndPermission;
 
 import java.util.Random;
@@ -48,7 +49,7 @@ public class SplashActivity extends BaseActivity {
                 LocalConfig.mMyTTTRtcEngineEventHandler);
         if (mTTTEngine == null) {
             System.exit(0);
-            return ;
+            return;
         }
         init();
     }
@@ -106,15 +107,19 @@ public class SplashActivity extends BaseActivity {
             return;
         }
         mIsLoging = true;
-        //随机生成用户ID
+        // 随机生成用户ID
         Random mRandom = new Random();
         final long mUserId = mRandom.nextInt(999999);
         LocalConfig.mUid = mUserId;
         LocalConfig.mRoomID = mRoomName;
-        //保存配置
+        // 保存配置
         MySpUtils.setParam(this, "RoomID", mRoomName);
-        //配置 SDK
+        // 配置 SDK
         initSDK();
+        // 配置推流地址，此推流地址仅供demo测试使用！
+        PublisherConfiguration mPublisherConfiguration = new PublisherConfiguration();
+        mPublisherConfiguration.setPushUrl("rtmp://push.3ttest.cn/sdk2/" + mRoomName);
+        mTTTEngine.configPublisher(mPublisherConfiguration);
         // 开始加入频道
         mTTTEngine.joinChannel("", mRoomName, mUserId);
         mDialog.setMessage(getString(R.string.ttt_loading_channel));
